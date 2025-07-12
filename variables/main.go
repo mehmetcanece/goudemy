@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 
 
 func main(){
@@ -47,7 +49,7 @@ func main(){
 
 	/* fmt.Println("Product name:", productName, "quantity:",quantity, "discount:", discount, "is in stock:", isInStock) //yanyana yazar bu */
 
-	/* fmt.Printf("Product name: %s\nQuantity: %d\nDiscount: %f\nIs in Stock: %t\n",productName,quantity,discount,isInStock) // %v dersen default şekilde tanımlar */
+ fmt.Printf("Product name: %s\nQuantity: %d\nDiscount: %f\nIs in Stock: %t\n",productName,quantity,discount,isInStock) // %v dersen default şekilde tanımlar 
 
 
 }
