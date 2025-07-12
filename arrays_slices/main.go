@@ -18,9 +18,15 @@ func main(){
 	names[3] = "Zeynep" // This will cause a compile-time error because the array size is fixed at 3.
  */
 
- var names = [4]string {"Mehmet","can","ece","ali"}
+ /* var names = [4]string {"Mehmet","can","ece","ali"}
 
-	fmt.Println(names[0:2])
+	fmt.Println(names[0:2]) */
+
+	var names = []string{"Mehmetcan", "Ece", "Ali", "Jack"}	//slice 
+
+	names = append(names, "Mert") //ekleme yapabiliriz slice olduğundan
+
+	fmt.Println(names) 
 
 
 	
