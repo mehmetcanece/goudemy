@@ -13,16 +13,16 @@ func main() {
 		fmt.Println("you cannot vote.")
 	} */
 
-	a := 9
-	b := 9
-	c := 3
+	a := 1
+	b := 6
+	c := 9
 
 
 	if a>=b && a>=c {
 		fmt.Println("a is the biggest one")
 	} else if b >= a && b >= c {
 		fmt.Println("b is the biggest one")
-	} else if c>=a && c>=b {
+	} else {
 		fmt.Println("c is the biggest one")
 	}
 
