@@ -6,8 +6,8 @@ func main(){
 	/* total := add(10,20)
 	fmt.Println(total) */
 
-	total, difference := calculation(10,20)
-	fmt.Println(total,difference)
+	total, difference, multiple, divide := calculator(10,20)
+	fmt.Println(total,difference,multiple,divide)
 }
 
 func add(x int, y int) int{
@@ -16,6 +16,6 @@ func add(x int, y int) int{
 }
 
 
-func calculation(x int, y int) (int, int){
-	return x + y, x - y
+func calculator(x int, y int) (int, int, int, float64){
+	return x + y, x - y , x * y, float64(x) / float64(y) // float64 dönüşümünü yapmazsak int olarak döner ve tam sayı olarak bölme işlemi yapar
 } //iki farklı değer de dönebilir 
