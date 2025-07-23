@@ -2,10 +2,27 @@ package main
 
 import "fmt"
 
+
+func add12(x int){
+	x += 12
+}
+
+func add12pointer(x *int){
+	*x += 12
+}
+
 func main(){
 
+	var a = 10
+	fmt.Println(a)
+	add12(a)
+	add12pointer(&a) //a nın adres bilgisini göndermemiz gerekiyo
+	fmt.Println(a)
 
-	var a  = 10
+
+
+
+	/* var a  = 10
 	var b int
 	var p *int
 	
@@ -14,7 +31,7 @@ func main(){
 
 	*p=20
 
-	fmt.Println(a,b)
+	fmt.Println(a,b) */
 
 
 
