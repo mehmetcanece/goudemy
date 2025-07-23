@@ -3,21 +3,31 @@ package main
 import "fmt"
 
 
-func add12(x int){
+func add12(x int){ // pass by value
 	x += 12
 }
 
-func add12pointer(x *int){
+func add12pointer(x *int){ // pass / call by reference
 	*x += 12
+}
+
+func changeValue(numbers []int){ // slicelar referans tiplerdir, bu yüzden referans olarak geçer	
+	numbers[0] = 1000
 }
 
 func main(){
 
-	var a = 10
+
+	var numbers = []int{1,2,3}
+
+	fmt.Println(numbers)
+	changeValue(numbers)
+	fmt.Println(numbers)
+	/* var a = 10
 	fmt.Println(a)
 	add12(a)
 	add12pointer(&a) //a nın adres bilgisini göndermemiz gerekiyo
-	fmt.Println(a)
+	fmt.Println(a) */
 
 
 
